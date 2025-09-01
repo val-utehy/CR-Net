@@ -60,7 +60,7 @@ To train the CR-Net model on your own dataset, follow these steps:
 
 **a. Configure the training script file:**
 
-Open and edit the file `train_scripts/ast_n2h_dat.sh`. In this file, you need to specify important paths such as the dataset path and the checkpoint saving directory.
+Open and edit the file `train_scripts/ast_n2h.sh`. In this file, you need to specify important paths such as the dataset path and the checkpoint saving directory.
 
 **b. Run the training script:**
 
