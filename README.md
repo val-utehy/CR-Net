@@ -56,19 +56,28 @@ To run this model, you need the proper environment. We recommend the following v
 
 ### 1. Model Training
 
-To train the CR-Net model on your own dataset, follow these steps:
+Training file will be updated soon!
 
-**a. Configure the training script file:**
+[//]: # (To train the CR-Net model on your own dataset, follow these steps:)
 
-Open and edit the file `train_scripts/ast_n2h.sh`. In this file, you need to specify important paths such as the dataset path and the checkpoint saving directory.
+[//]: # ()
+[//]: # (**a. Configure the training script file:**)
 
-**b. Run the training script:**
+[//]: # ()
+[//]: # (Open and edit the file `train_scripts/ast_n2h.sh`. In this file, you need to specify important paths such as the dataset path and the checkpoint saving directory.)
 
-After finishing the configuration, navigate to the project’s root directory and execute the following command:
+[//]: # ()
+[//]: # (**b. Run the training script:**)
 
-```shell
-    bash train_scripts/ast_n2h_dat.sh
-```
+[//]: # ()
+[//]: # (After finishing the configuration, navigate to the project’s root directory and execute the following command:)
+
+[//]: # ()
+[//]: # (```shell)
+
+[//]: # (    bash train_scripts/ast_n2h_dat.sh)
+
+[//]: # (```)
 ### 2. Testing and Inference
 
 **a. Video Processing:**
@@ -112,6 +121,14 @@ After completing the configuration, navigate to the project’s root directory a
 [//]: # (})
 
 [//]: # (```)
+## References
+
+1. Pizzati, F., Cerri, P., & de Charette, R. (2021). **CoMoGAN: Continuous Model-Guided Image-to-Image Translation**. In *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)*, pp. 14288–14298. [PDF](#) | [Supplementary](#) | [arXiv](#) | [BibTeX](#)
+
+2. Jiang, L., Zhang, C., Huang, M., Liu, C., Shi, J., & Loy, C.C. (2020). **TSIT: A Simple and Versatile Framework for Image-to-Image Translation**. In A. Vedaldi, H. Bischof, T. Brox, & J.M. Frahm (Eds.), *Computer Vision – ECCV 2020*, Lecture Notes in Computer Science, vol 12348. Springer, Cham. [DOI](https://doi.org/10.1007/978-3-030-58580-8_13)
+
+3. Zhang, C., Xu, X., Wang, L., Dai, Z., & Yang, J. (2024). **S2WAT: Image Style Transfer via Hierarchical Vision Transformer Using Strips Window Attention**. *Proceedings of the AAAI Conference on Artificial Intelligence*, 38(7), 7024–7032. [DOI](https://doi.org/10.1609/aaai.v38i7.28529)
+
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

@@ -61,19 +61,28 @@ Bằng cách học một quy trình kết xuất liên tục, CR-Net có khả n
 
 ### 1. Huấn luyện mô hình (Training)
 
-Để huấn luyện mô hình CR-Net trên bộ dữ liệu của riêng bạn, hãy làm theo các bước sau:
+Training file will be updated soon!
 
-**a. Cấu hình file script huấn luyện:**
+[//]: # (Để huấn luyện mô hình CR-Net trên bộ dữ liệu của riêng bạn, hãy làm theo các bước sau:)
 
-Mở và chỉnh sửa file `train_scripts/ast_n2h_dat.sh`. Trong file này, bạn cần chỉ định các đường dẫn quan trọng như đường dẫn đến bộ dữ liệu và nơi lưu checkpoint.
+[//]: # ()
+[//]: # (**a. Cấu hình file script huấn luyện:**)
 
-**b. Chạy script huấn luyện:**
+[//]: # ()
+[//]: # (Mở và chỉnh sửa file `train_scripts/ast_n2h_dat.sh`. Trong file này, bạn cần chỉ định các đường dẫn quan trọng như đường dẫn đến bộ dữ liệu và nơi lưu checkpoint.)
 
-Sau khi đã cấu hình xong, di chuyển đến thư mục gốc của dự án và thực thi lệnh sau:
+[//]: # ()
+[//]: # (**b. Chạy script huấn luyện:**)
 
-```shell
-    bash train_scripts/ast_n2h_dat.sh
-```
+[//]: # ()
+[//]: # (Sau khi đã cấu hình xong, di chuyển đến thư mục gốc của dự án và thực thi lệnh sau:)
+
+[//]: # ()
+[//]: # (```shell)
+
+[//]: # (    bash train_scripts/ast_n2h_dat.sh)
+
+[//]: # (```)
 
 ### 2. Thử nghiệm và Inference (Testing and Inference)
 **a. Xử lý video:**
@@ -96,7 +105,7 @@ Sau khi đã cấu hình xong, di chuyển đến thư mục gốc của dự á
 ```
 
 
-## 6. Trích dẫn (Citation)
+## Trích dẫn (Citation)
 
 [//]: # (```bibtex)
 
@@ -113,6 +122,14 @@ Sau khi đã cấu hình xong, di chuyển đến thư mục gốc của dự á
 [//]: # (})
 
 [//]: # (```)
+## Tham khaor
+
+1. Pizzati, F., Cerri, P., & de Charette, R. (2021). **CoMoGAN: Continuous Model-Guided Image-to-Image Translation**. In *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)*, pp. 14288–14298. [PDF](#) | [Supplementary](#) | [arXiv](#) | [BibTeX](#)
+
+2. Jiang, L., Zhang, C., Huang, M., Liu, C., Shi, J., & Loy, C.C. (2020). **TSIT: A Simple and Versatile Framework for Image-to-Image Translation**. In A. Vedaldi, H. Bischof, T. Brox, & J.M. Frahm (Eds.), *Computer Vision – ECCV 2020*, Lecture Notes in Computer Science, vol 12348. Springer, Cham. [DOI](https://doi.org/10.1007/978-3-030-58580-8_13)
+
+3. Zhang, C., Xu, X., Wang, L., Dai, Z., & Yang, J. (2024). **S2WAT: Image Style Transfer via Hierarchical Vision Transformer Using Strips Window Attention**. *Proceedings of the AAAI Conference on Artificial Intelligence*, 38(7), 7024–7032. [DOI](https://doi.org/10.1609/aaai.v38i7.28529)
+
 
 ## Giấy phép (License)
 CR-Net được cấp phép dưới giấy phép MIT. Vui lòng xem file [LICENSE](../LICENSE) để biết thêm chi tiết.
