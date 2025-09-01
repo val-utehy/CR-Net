@@ -112,9 +112,9 @@ After completing the configuration, navigate to the project’s root directory a
 
 [//]: # (    title={CR-Net: A Continuous Rendering Network for Improving Robustness to Low-illumination},)
 
-[//]: # (    author={Author Name 1 and Author Name 2 and ...},)
+[//]: # (    author={},)
 
-[//]: # (    journal={Conference or Journal Name},)
+[//]: # (    journal={},)
 
 [//]: # (    year={2025})
 
@@ -123,11 +123,11 @@ After completing the configuration, navigate to the project’s root directory a
 [//]: # (```)
 ## References
 
-1. Pizzati, F., Cerri, P., & de Charette, R. (2021). **CoMoGAN: Continuous Model-Guided Image-to-Image Translation**. In *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)*, pp. 14288–14298. [PDF](#) | [Supplementary](#) | [arXiv](#) | [BibTeX](#)
+1. https://github.com/EndlessSora/TSIT
 
-2. Jiang, L., Zhang, C., Huang, M., Liu, C., Shi, J., & Loy, C.C. (2020). **TSIT: A Simple and Versatile Framework for Image-to-Image Translation**. In A. Vedaldi, H. Bischof, T. Brox, & J.M. Frahm (Eds.), *Computer Vision – ECCV 2020*, Lecture Notes in Computer Science, vol 12348. Springer, Cham. [DOI](https://doi.org/10.1007/978-3-030-58580-8_13)
+2. https://github.com/astra-vision/CoMoGAN
 
-3. Zhang, C., Xu, X., Wang, L., Dai, Z., & Yang, J. (2024). **S2WAT: Image Style Transfer via Hierarchical Vision Transformer Using Strips Window Attention**. *Proceedings of the AAAI Conference on Artificial Intelligence*, 38(7), 7024–7032. [DOI](https://doi.org/10.1609/aaai.v38i7.28529)
+3. https://github.com/AlienZhang1996/S2WAT
 
 
 ## License
