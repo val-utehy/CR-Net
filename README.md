@@ -3,7 +3,7 @@
 <p align="center">
     📄 <a href="link-to-your-paper"><b>Paper</b></a>&nbsp;&nbsp; | &nbsp;&nbsp;
     💻 <a href="https://github.com/val-utehy/CR-Net"><b>Source Code</b></a>&nbsp;&nbsp; | &nbsp;&nbsp;
-    🤗 <a href="https://huggingface.co/datasets/datnguyentien204/CR-Net"><b>Hugging Face</b></a>
+    🤗 <a href="https://huggingface.co/val-utehy/CR-Net"><b>Hugging Face</b></a>
 </p>
 
 <p align="center">
@@ -53,7 +53,7 @@ To run this model, you need the proper environment. We recommend the following v
 > [!NOTE]
 > Make sure you have installed the compatible versions of **torch** and **torchvision** with your **CUDA driver** to leverage GPU.
 ## Pretrained Models
-You can download the pretrained models from this [link](https://huggingface.co/datasets/datnguyentien204/CR-Net). 
+You can download the pretrained models from this [link](https://huggingface.co/val-utehy/CR-Net). 
 You can use latest checkpoint `latest_net_G.pth` for inference.
 > [!NOTE]
 > Please ensure your path to the checkpoint is correct in the script files before running.
