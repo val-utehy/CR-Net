@@ -53,7 +53,7 @@ To run this model, you need the proper environment. We recommend the following v
 > [!NOTE]
 > Make sure you have installed the compatible versions of **torch** and **torchvision** with your **CUDA driver** to leverage GPU.
 ## Pretrained Models
-You can download the pretrained models from this [link](https://huggingface.co/val-utehy/CR-Net). 
+You can download the pretrained models from this [link](https://huggingface.co/val-utehy/CR-Net/tree/main/checkpoints_v2). 
 You can use latest checkpoint `latest_net_G.pth` for inference.
 > [!NOTE]
 > Please ensure your path to the checkpoint is correct in the script files before running.
