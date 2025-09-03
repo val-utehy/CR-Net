@@ -52,6 +52,12 @@ To run this model, you need the proper environment. We recommend the following v
 
 > [!NOTE]
 > Make sure you have installed the compatible versions of **torch** and **torchvision** with your **CUDA driver** to leverage GPU.
+## Pretrained Models
+You can download the pretrained models from this [link](https://huggingface.co/datasets/datnguyentien204/CR-Net). 
+You can use latest checkpoint `latest_net_G.pth` for inference.
+> [!NOTE]
+> Please ensure your path to the checkpoint is correct in the script files before running.
+
 ## Usage Guide
 
 ### 1. Model Training
@@ -83,7 +89,7 @@ Training file will be updated soon!
 **a. Video Processing:**
 
 #### 1. Configure the script file:
-Open and edit the file `test_scripts/ast_inference_video_dat.sh`. Here, you need to provide the path to the trained checkpoint and the input/output video paths.
+Open and edit the file `test_scripts/ast_inference_video.sh`. Here, you need to provide the path to the trained checkpoint and the input/output video paths.
 
 #### 2. Run the video processing script:
 After completing the configuration, navigate to the project’s root directory and execute the following command:
