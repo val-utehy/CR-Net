@@ -3,7 +3,7 @@
 <p align="center">
     📄 <a href="link-to-your-paper"><b>Paper</b></a>&nbsp;&nbsp; | &nbsp;&nbsp;
     💻 <a href="https://github.com/val-utehy/CR-Net"><b>Mã nguồn</b></a>&nbsp;&nbsp; | &nbsp;&nbsp;
-    🤗 <a href="https://huggingface.co/datasets/datnguyentien204/CR-Net"><b>Hugging Face</b></a>
+    🤗 <a href="https://huggingface.co/val-utehy/CR-Net"><b>Hugging Face</b></a>
 </p>
 
 
