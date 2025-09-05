@@ -1,0 +1,119 @@
+                      D_steps_per_G: 1                             
+                                  T: 0.07                          
+                  add_phi_to_latent: True                          	[default: False]
+                       aspect_ratio: 1.0                           
+                        attn_layers: 4,7,9                         
+                          batchSize: 2                             	[default: 1]
+                              beta1: 0.5                           
+                              beta2: 0.999                         
+                 blackout_threshold: -0.95                         	[default: -0.9]
+                cache_filelist_read: False                         
+               cache_filelist_write: False                         
+                    checkpoints_dir: ./checkpoints_v2              	[default: ./checkpoints]
+                  cond_enc_input_nc: 3                             
+                       cond_enc_ngf: 32                            	[default: 64]
+                 cond_enc_num_downs: 2                             	[default: 3]
+             contain_dontcare_label: False                         
+                     continue_train: True                          	[default: False]
+                              croot: ./datasets/summer2winter_yosemite/
+                          crop_size: 256                           
+             d_cross_attn_num_heads: 4                             
+                           dataroot: /workspace/RAFAEL_Recon/rafael_ds_ver2	[default: None]
+                       dataset_mode: unaligned_day_night           	[default: summer2winteryosemite]
+           daylight_curve_steepness: 1.5                           	[default: 0.75]
+                              debug: False                         
+                       display_freq: 100                           
+                    display_winsize: 256                           
+                           gan_mode: hinge                         
+                            gpu_ids: 0                             
+                          init_type: xavier                        
+                      init_variance: 0.02                          
+                            isTrain: True                          	[default: None]
+                           label_nc: 3                             
+                           lambda_G: 1.0                           
+               lambda_content_focus: 5.0                           
+                  lambda_continuity: 20.0                          	[default: 10.0]
+                        lambda_feat: 15.0                          	[default: 10.0]
+                    lambda_identity: 10.0                          
+                         lambda_kld: 0.05                          
+                   lambda_laplacian: 25.0                          	[default: 5.0]
+            lambda_latent_diversity: 1.0                           
+               lambda_night_content: 0.0                           
+                   lambda_patch_vgg: 10.0                          
+                         lambda_ppl: 0.5                           	[default: 2.0]
+                          lambda_r1: 10.0                          
+                     lambda_spatial: 5.0                           	[default: 10.0]
+                        lambda_ssim: 1.0                           
+                       lambda_style: 0.0                           	[default: 30.0]
+                 lambda_style_recon: 15.0                          
+        lambda_thresholded_blackout: 10.0                          	[default: 20.0]
+                          lambda_tv: 8.0                           	[default: 5.0]
+                         lambda_vgg: 10.0                          
+                  lambda_vgg_interp: 100.0                         	[default: 15.0]
+                       lambda_z_reg: 5.0                           	[default: 0.0]
+                       learned_attn: False                         
+                 light_map_channels: 1                             
+                 load_from_opt_file: False                         
+                          load_size: 286                           
+                          loss_mode: cos                           
+                                 lr: 0.0001                        	[default: 0.0002]
+                   max_dataset_size: 9223372036854775807           
+                              model: pix2pix                       
+                           nThreads: 4                             	[default: 0]
+                               name: ast_rafael_v2_sharpening      	[default: ast_s2wat_default_experiment]
+                                ndf: 64                            
+                               netD: swin_transformer_conditional_discriminator	[default: None]
+                               netG: RafaelGenerator               
+                                ngf: 64                            
+            night_loss_warmup_iters: 10000                         
+                              niter: 15                            	[default: 50]
+                        niter_decay: 10                            	[default: 0]
+                            no_TTUR: False                         
+                            no_flip: False                         
+                    no_ganFeat_loss: False                         
+                            no_html: False                         
+                        no_instance: True                          	[default: False]
+                        no_vgg_loss: False                         
+                             norm_D: spectralinstance              
+                             norm_E: spectralinstance              
+                             norm_G: spectralinstance              
+                             norm_S: spectralinstance              
+                          optimizer: adam                          
+                          output_nc: 3                             
+                         patch_nums: 128.0                         
+                         patch_size: 32                            
+              patch_vgg_num_patches: 64                            
+                     patch_vgg_size: 64                            
+                              phase: train                         
+                                phi: 0.0                           
+                      ppl_reg_every: 8                             	[default: 4]
+                    preprocess_mode: resize_and_crop               
+                         print_freq: 100                           
+                       r1_reg_every: 16                            
+                      rafael_depths: 2,2,2                         
+                   rafael_embed_dim: 192                           
+                    rafael_img_size: 256                           
+                      rafael_nheads: 3,6,12                        
+                  rafael_patch_size: 2                             
+                rafael_strip_widths: 2,4,7                         
+              rafael_use_checkpoint: True                          	[default: False]
+                    save_epoch_freq: 2                             	[default: 10]
+                   save_latest_freq: 2000                          	[default: 5000]
+                        semantic_nc: 3                             	[default: None]
+                     serial_batches: False                         
+                              sroot: ./datasets/summer2winter_yosemite/
+               style_enc_latent_dim: 256                           
+                  style_mixing_prob: 0.9                           
+                  swin_d_model_name: swinv2_tiny_window8_256.ms_in1k
+               swin_d_num_conv_head: 3                             	[default: 2]
+                swin_d_output_style: patch                         
+                  swin_d_pretrained: True                          	[default: False]
+                 swin_d_use_sigmoid: False                         
+               synth_num_res_blocks: 4                             
+                               task: AST                           
+                             tf_log: False                         
+                           use_norm: False                         
+                 use_patch_vgg_loss: True                          	[default: False]
+           use_thresholded_blackout: True                          	[default: False]
+                            use_vae: False                         
+                        which_epoch: latest                        
