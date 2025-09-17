@@ -67,8 +67,6 @@ class Pix2PixModel(torch.nn.Module):
 
         parser.add_argument('--daylight_curve_steepness', type=float, default=0.75)
         parser.add_argument('--lambda_vgg_interp', type=float, default=15.0)
-        parser.add_argument('--lambda_tv', type=float, default=5.0)
-
         parser.add_argument('--attn_layers', type=str, default='4,7,9')
         parser.add_argument('--patch_nums', type=float, default=128)
         parser.add_argument('--patch_size', type=int, default=32)
@@ -80,15 +78,11 @@ class Pix2PixModel(torch.nn.Module):
         parser.add_argument('--lambda_G', type=float, default=1.0)
         if is_train:
             parser.add_argument('--night_loss_warmup_iters', type=int, default=10000)
-            parser.add_argument('--use_thresholded_blackout', action='store_true')
-            parser.add_argument('--blackout_threshold', type=float, default=-0.9)
-            parser.add_argument('--lambda_thresholded_blackout', type=float, default=20.0)
 
             parser.add_argument('--lambda_content_focus', type=float, default=5.0)
             parser.add_argument('--lambda_continuity', type=float, default=10.0)
             parser.add_argument('--lambda_style', type=float, default=30.0)
             parser.add_argument('--lambda_identity', type=float, default=10.0)
-            parser.add_argument('--lambda_style_recon', type=float, default=15.0)
             parser.add_argument('--lambda_r1', type=float, default=10.0)
             parser.add_argument('--lambda_latent_diversity', type=float, default=1.0)
             parser.add_argument('--use_patch_vgg_loss', action='store_true')
@@ -99,7 +93,6 @@ class Pix2PixModel(torch.nn.Module):
             parser.add_argument('--ppl_reg_every', type=int, default=4)
             parser.add_argument('--r1_reg_every', type=int, default=16)
 
-            parser.add_argument('--lambda_laplacian', type=float, default=5.0)
             parser.add_argument('--lambda_ssim', type=float, default=1.0)
 
             if not hasattr(parser.parse_known_args()[0], 'lambda_z_reg'):
@@ -128,16 +121,9 @@ class Pix2PixModel(torch.nn.Module):
                 self.criterionVGG = networks.VGGLoss(self.opt.gpu_ids)
                 if self.use_gpu(): self.criterionVGG.to(self.device)
 
-            if opt.lambda_tv > 0:
-                self.criterionTV = TVLoss().to(self.device)
-
             if opt.lambda_ssim > 0:
                 self.criterionSSIM = SSIMLoss().to(self.device)
-            if opt.lambda_laplacian > 0:
-                self.criterionLaplacian = LaplacianLoss(self.device).to(self.device)
 
-            if opt.use_thresholded_blackout:
-                self.criterionThresholdedBlackout = ThresholdedL1Loss(threshold=opt.blackout_threshold).to(self.device)
 
             self.vgg_for_spatial = None
             self.criterionSpatial = None
@@ -272,26 +258,6 @@ class Pix2PixModel(torch.nn.Module):
                 loss_identity = self.criterionIdentity(i_cc, content_orig)
                 G_losses['Identity'] = (loss_identity * w_day).mean() * self.opt.lambda_identity
 
-        if warmup_factor > 0:
-            if self.opt.lambda_style_recon > 0:
-                i_nn = identity_images_dict.get('identity_night')
-                if i_nn is not None:
-                    loss_style_recon = self.criterionIdentity(i_nn, night_anchor_image)
-                    G_losses['Style_Recon'] = (
-                                                      loss_style_recon * w_night).mean() * self.opt.lambda_style_recon * warmup_factor
-
-            if self.opt.lambda_laplacian > 0 and hasattr(self, 'criterionLaplacian'):
-                loss_lap = self.criterionLaplacian(fake_image, content_orig)
-                G_losses['Laplacian'] = (loss_lap * w_night).mean() * self.opt.lambda_laplacian * warmup_factor
-
-            if self.opt.lambda_tv > 0 and hasattr(self, 'criterionTV'):
-                loss_tv = self.criterionTV(fake_image)
-                G_losses['TV'] = (loss_tv * w_night).mean() * self.opt.lambda_tv * warmup_factor
-
-            if self.opt.use_thresholded_blackout and hasattr(self, 'criterionThresholdedBlackout'):
-                loss_thresh_blackout = self.criterionThresholdedBlackout(fake_image)
-                G_losses['Thresh_Blackout'] = (
-                                                      loss_thresh_blackout * w_night).mean() * self.opt.lambda_thresholded_blackout * warmup_factor
 
         if hasattr(self.opt, 'lambda_z_reg') and self.opt.lambda_z_reg > 0:
             netG_module = self.netG.module if isinstance(self.netG, torch.nn.DataParallel) else self.netG
