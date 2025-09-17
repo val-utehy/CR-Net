@@ -19,7 +19,13 @@
 **CR-Net** is a model enhance the quality of images and videos captured under low-light conditions. 
 By learning a continuous rendering process, CR-Net effectively improves brightness, producing natural and sharp results even in challenging dark environments. 
 To learn more about CR-Net, feel free to read our documentation [English](../README.md) | [Tiếng Việt](preview/README-vi.md) | [中文](preview/README-zh.md).
+<p align="center">
+    <img src="preview/phiangle360.jpg" width="800"/>
+<p>
 
+<p align="center">
+    <em>Smooth continuous light to dark transition with phi angle</em>
+<p>
 
 ### Key Features
 
