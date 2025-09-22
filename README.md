@@ -17,7 +17,6 @@
 ## Introduction
 
 **CR-Net**  is a novel transformer-based I2I framework that provides continuous control over illumination conditions to generate realistic and diverse images, particularly low-light ones, without requiring style samples during inference.
-To learn more about CR-Net, feel free to read our documentation [English](../README.md) | [Tiếng Việt](preview/README-vi.md) | [中文](preview/README-zh.md).
 <p align="center">
     <img src="preview/phiangle360.jpg" width="800"/>
 <p>
