@@ -58,10 +58,11 @@ To run this model, you need the proper environment. We recommend the following v
 > [!NOTE]
 > Make sure you have installed the compatible versions of **torch** and **torchvision** with your **CUDA driver** to leverage GPU.
 ## Pretrained Models
-You can download the pretrained models from this [link](https://huggingface.co/val-utehy/CR-Net/tree/main/checkpoints_v2/ast_rafael_v2_sharpening). I pushed latest checkpoint and opt.pkl file for inference in the `checkpoints_v2/ast_rafael_v2_sharpening` folder. 
-You can use latest checkpoint `latest_net_G.pth` and `opt.pkl` for inference.
-> [!NOTE]
-> Please ensure your path to the checkpoint and config (opt.pkl) is correct in the script files before running.
+The pretrained models are available at: [link](https://drive.google.com/drive/folders/13_9MPiA9kfznIBCqHE6nuvAVrHEjPLLJ).  
+> [!NOTE]  
+> Put all weights downloaded to [./checkpoints_v2/ast_rafael_v2_sharpening](./checkpoints_v2/ast_rafael_v2_sharpening).  
+> Please ensure your path to the checkpoint and config (`opt.pkl`) is correct in the script files before running.
+
 
 ## Usage Guide
 
