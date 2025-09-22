@@ -16,8 +16,7 @@
 
 ## Introduction
 
-**CR-Net** is a model enhance the quality of images and videos captured under low-light conditions. 
-By learning a continuous rendering process, CR-Net effectively improves brightness, producing natural and sharp results even in challenging dark environments. 
+**CR-Net**  is a novel transformer-based I2I framework that provides continuous control over illumination conditions to generate realistic and diverse images, particularly low-light ones, without requiring style samples during inference.
 To learn more about CR-Net, feel free to read our documentation [English](../README.md) | [Tiếng Việt](preview/README-vi.md) | [中文](preview/README-zh.md).
 <p align="center">
     <img src="preview/phiangle360.jpg" width="800"/>
@@ -29,9 +28,9 @@ To learn more about CR-Net, feel free to read our documentation [English](../REA
 
 ### Key Features
 
-*   **Low-light image/video enhancement:** Significantly improves brightness and contrast for images and videos captured in dim lighting.
-*   **Continuous rendering network:** Employs a novel architecture to deliver smoother and more natural results compared to traditional methods.
-*   **Flexible applications:** Supports both video processing and directories containing multiple still images.
+*   **Continuous translation:** CR-Net is capable of achieving smooth continuous translations, as well as cyclic translations, such as across different times of the day.
+*   **Arbitrary illumination:**  By varying the light variable, high-quality continuous image translations between daytime and nighttime can be efficiently obtained.
+*   **Data augmentation:** The proposed model facilitates the generation of realistic and diverse low-light images for training and advancing deep learning–based computer vision applications.
 
 ## Demo
 
