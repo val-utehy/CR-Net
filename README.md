@@ -1,4 +1,4 @@
-# CR-Net: A Continuous Rendering Network for Enhancing Processing in Low-Light Environments
+# [Official] CR-Net: A Continuous Rendering Network for Enhancing Processing in Low-Light Environments
 
 <p align="center">
     📄 <a href="link-to-your-paper"><b>Paper</b></a>&nbsp;&nbsp; | &nbsp;&nbsp;
