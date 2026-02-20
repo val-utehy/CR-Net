@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-EXPERIMENT_NAME='ast_rafael_v1_sharpening'
+EXPERIMENT_NAME='ast_rafael_v2_sharpening'
 IMAGE_FOLDER='/home/share/RAFAEL_8/VOC_2012_dark_YOLO_format/images/trainval'
 WHICH_EPOCH='latest'
 MAX_IMG_HEIGHT=960
