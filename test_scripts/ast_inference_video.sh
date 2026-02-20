@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-EXPERIMENT_NAME='ast_rafael_v32_decrease_night_v2'
+EXPERIMENT_NAME='ast_rafael_v2_sharpening'
 WHICH_EPOCH=8
 GPU_ID=0
 INPUT_VIDEO='/home/share/RAFAEL_7_Dark/HangzhouDemo.mp4'
