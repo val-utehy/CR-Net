@@ -105,7 +105,7 @@ After completing the configuration, navigate to the project’s root directory a
 
 **b. Image Directory Processing:**
 #### 1. Configure the script file:
-Open and edit the file `test_scripts/ast_n2h_dat.sh`. Here, you need to provide the path to the trained checkpoint and the input/output image directory paths.
+Open and edit the file `test_scripts/ast_n2h.sh`. Here, you need to provide the path to the trained checkpoint and the input/output image directory paths.
 
 #### 2. Run the image directory processing script:
 After completing the configuration, navigate to the project’s root directory and execute the following command:
